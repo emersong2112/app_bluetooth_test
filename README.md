@@ -1,16 +1,11 @@
-# app_beacons
+# Bluetooth Tracker
 
-A new Flutter project.
+App de exemplo de modelo de gerenciamento de controle de fluxo de pessoas.
 
-## Getting Started
+O objetivo desse app é ser uma Prova de Conceito (POC), demonstrando que é possível e viável ter um controle preciso e em tempo real do número de pessoas que passam por um determinado local utilizando esse app.
 
-This project is a starting point for a Flutter application.
+A cada 10 segundos, ele escaneia o ambiente, guargando os endereços MAC de todos os dispositivos encontrados e armazena em uma lista, comparando com os últimos scans para saber quais são novos e quais são recorrentes.
 
-A few resources to get you started if this is your first Flutter project:
+Dessa forma sabemos quantas visitas únicas houveram e quantos estão visíveis agora.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Esse app foi criado em flutter e utiliza o pacote flutter_blue_plus para acessar o bluetooth do dispositivo.
